@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<install version="1.5" type="plugin" group="vmpayment" >
+    <name>VMPAYMENT_COINZONE</name>
+    <creationDate>February 10 2015</creationDate>
+    <author>Coinzone BV</author>
+    <authorUrl>http://www.coinzone.com</authorUrl>
+    <copyright>Copyright</copyright>
+    <license>http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL</license>
+    <version>1.0.0</version>
+    <description>Coinzone Payment Plugin</description>
+    <languages>
+        <language tag="en-GB">en-GB.plg_vmpayment_coinzone.ini</language>
+    </languages>
+    <files>
+        <filename plugin="coinzone">coinzone.php</filename>
+        <filename>lib/coinzone_lib.php</filename>
+    </files>
+    <params addpath="/plugins/vmpayment/coinzone" />
+    <params addpath="/administrator/components/com_virtuemart/elements">
+        <param type="vmtitle" default="VMPAYMENT_COINZONE_INFO_TITLE" description="VMPAYMENT_COINZONE_INFO" level="level1"/>
+        <param name="client_code" type="text" label="VMPAYMENT_COINZONE_CLIENT_CODE" description="VMPAYMENT_COINZONE_CLIENT_CODE"/>
+        <param name="api_key" type="text" label="VMPAYMENT_COINZONE_API_KEY" description="VMPAYMENT_COINZONE_API_KEY"/>
+    </params>
+</install>
